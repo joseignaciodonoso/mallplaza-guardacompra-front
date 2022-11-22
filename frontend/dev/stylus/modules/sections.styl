@@ -259,7 +259,9 @@ section
 		.section__wrap
 			width: 100%
 			height: 100%
-			padding 20px 10px 30px
+			padding 20px 10px 0px
+			@media $break-md
+				padding 20px 10px 30px
 			.col-md-6
 				.section__body
 					align-items: center
@@ -315,7 +317,10 @@ section
 		margin-top: 20px
 		.section__wrap
 			padding 0px 
-			margin 0px 20px
+			display: flex
+			justify-content: center
+			margin 0px auto
+			flex-direction: column
 			.section__header
 				background-color: white
 				width 190px
@@ -326,7 +331,6 @@ section
 					color #3F3F3F
 					font-weight: 500
 					font-size: 20px
-
 			.section__body
 				max-width 400px
 				margin: 0 auto
@@ -334,17 +338,16 @@ section
 					max-width: 800px
 			.section__footer
 				background-color: #FEF9E6
-				margin 40px auto 0 auto
-				height: 56px
+				padding: 20px
+				margin 30px auto 0 auto
 				display: flex
 				justify-content: center
 				align-items center
-				max-width 800px
+				max-width 60%
 				border 1px dashed #F2C204
 				border-radius: 8px
 				.section__disclaimer 
-					padding: 0px 20px
-					margin-bottom: 0px
+					margin 0 auto
 					font-size: 12px 
 					display: absolute
 					&:before 
@@ -355,14 +358,21 @@ section
 						top 0
 						left 0
 						color #F2C204
+				@media $break-md
+					padding: 20px
+					max-width: 60%
+					margin-top 30px
 		
 	&.section--curve
-		border-bottom: 0px
+		border 0px
 		.section__wrap
-			margin-bottom: -2px
+			margin-bottom: -4px
 			padding: 0px
 			width: 100%
 			max-width: 100%	
+			img
+				margin 0 auto
+				width 100%
 
 	&.section--form
 		.section__wrap
