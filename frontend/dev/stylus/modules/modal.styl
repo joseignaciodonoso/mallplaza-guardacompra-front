@@ -1,0 +1,157 @@
+
+.modal
+	cover(fixed)
+	z-index $z-index-modal
+	display none
+
+	&.modal--in
+		display table
+		animation fadeIn .5s ease
+		.modal__box
+			animation scaleFadeIn .5s .2s ease backwards
+
+	&.modal--out
+		display table
+		animation fadeOut .2s ease both
+		.modal__box
+			animation scaleFadeOut .2s ease both
+	&.modal--register
+		.modal__content
+			position: absolute
+			top 50%
+			left 50%
+			transform: translate(-50%, -50%)
+			min-width: 295px
+			background-color: white
+			padding 20px
+			border: 1px solid gray
+			border-radius 8px
+			margin 0 auto
+			@media $break-md
+				position: absolute
+				top 50%
+				left 50%
+				transform: translate(-50%, -50%)
+				margin: 0 auto
+				align-items: center
+				padding 20px
+				flex-direction: column
+				background-color: white
+				max-width: 338px
+				border: 1px solid gray
+				border-radius 8px
+			.modal__title
+				font-size: 24px
+				line-height: 32px
+				font-weight: 200
+				color: #2B2B2B
+				padding 10px 20px
+				text-align: center
+				margin: 20 auto
+				strong 
+					color rgba(233, 0, 75, 1)
+			.modal__form
+				display: flex
+				justify-content: center
+				align-items: center
+				form 
+					display: flex
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					min-width: 100%
+					gap 20px
+					.form__title
+						margin 0px
+						font-weight: 200
+					.form__element
+						width: 100%
+						.col-md-4, .col-md-8
+							margin 0px
+						select, input
+							width 100%
+							padding: 10px
+							border: 1px solid gray
+							border-radius: 8px
+							color #A7A7A7
+					.form__checkbox
+						display: flex
+						flex-direction: column
+						justify-content: flex-start
+						width: 100%
+						left 0px
+						label 
+							text-align: left
+							font-size: 14px
+						
+			.btn
+				background-color: #E9004B
+				padding: 15px 20px
+	&.modal--register--nextstep
+		.modal__content
+			position: absolute
+			top 50%
+			left 50%
+			transform: translate(-50%, -50%)
+			min-width: 295px
+			@media $break-md
+				position: absolute
+				top 50%
+				left 50%
+				transform: translate(-50%, -50%)
+
+			.modal__title
+				font-weight: 500
+			.modal__list
+				font-size: 14px
+				list-style-type circle
+				margin-bottom: 15px
+				text-align: left
+	&.modal--register--done
+		.modal__description
+			text-align: center
+		.modal__codebox
+			background-color: #FFF1F0
+			text-align: center
+			padding: 20px 0px
+			margin 0px
+			border: 1px dashed #E9004B
+			border-radius: 8px
+			.modal__name
+				margin 0px
+			.modal__coda
+				margin 0px
+				color #E9004B
+				font-weight: 600
+
+
+			
+	.modal__back
+		cover(absolute)
+		background-color rgba(0, 0, 0, 0.6)
+		backdrop-filter: blur(4px)
+		@media $break-md
+			display flex
+			align-items center
+			justify-content center
+
+		
+	.modal__close
+		position absolute
+		top 0
+		right 0
+		padding 10px 15px
+		opacity .5
+		color $gray
+		&:hover
+			cursor pointer
+
+.modal__bg
+	width: 100%
+	height 100%
+	background-color: black
+	opacity 0.7
+	position: absolute
+	top 0
+	z-index 20
+

@@ -1,0 +1,122 @@
+include ../includes/mixins
+include ../includes/articles
+- RAND = Math.floor(Math.random()*100000);
+doctype html
+html(lang='es')
+	head
+		title Mallplaza
+		meta(charset="UTF-8")
+		link(href='img/favicon.png', rel='shortcut icon')
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		link(href='css/main.css?v='+RAND, rel='stylesheet', type='text/css')
+		script(src='js/main.js?v='+RAND, type='text/javascript')
+
+		// Meta tags facebook
+		meta(property='og:title', content="#")
+		meta(property='og:description', content="#")
+		meta(property='og:image', content="#")
+
+		// Meta tags twitter cards
+		meta(name='twitter:card', content="summary_large_image")
+		meta(name='twitter:title', content="#")
+		meta(name='twitter:description', content="#")
+		meta(name='twitter:image', content="#")
+		link(href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,700&display=swap" rel="stylesheet")
+		link(href="https://fonts.googleapis.com", rel="preconnect")
+		link(href="https://fonts.gstatic.com", rel="preconnect" crossorigin)
+
+
+	body
+		include ../includes/header
+		#sections
+			block page
+
+			.modal.modal--register
+				.modal__back
+				.modal__front
+					.modal__box
+						.modal__content
+							.modal__close
+								span.fa.fa-close 	
+							h3.modal__title
+								| Bienvenido a tu 
+								strong  Guarda compra
+							.modal__form
+								form.form
+									h5.form__title ¿Dónde te podemos encontrar?
+									.form__element
+										.form__input
+											select(name="#")
+												option(value="0") Selecciona Mail
+												option(value="1") Ipsum
+												option(value="2") Dolor
+									.form__element
+										.form__input
+											select(name="#")
+												option(value="#") Selecciona Tienda
+												option(value="#") Ipsum
+												option(value="#") Dolor
+									h5.form__title Tus Datos:
+									.form__element
+										.form__input
+											input(type="text" placeholder="Nombre")
+									.form__element
+										.form__input
+											input(type="text" placeholder="Rut")
+									.form__element
+										.form__input
+											.cols
+												.col-md-4.col-xs-4
+													input(type="#" placeholder="+569")
+												.col-md-8.col-xs-8
+													input(type="#" placeholder="Telefono")
+									.form__element
+										.form__input
+											input(type="#" placeholder="Mail")		
+									.form__checkbox
+										label
+											input(type="checkbox" name="#ejemplo-checkbox" )
+											|   Acepto los 
+											u Términos y Condiciones
+										label
+											input(type="checkbox" name="#ejemplo-checkbox" value="2")
+											|   Acepto el 
+											u reglamento
+											| y la 
+											u política de privacidad
+											| para acceder al programa de CMR Puntos.
+									.form__button 
+										button.btn Solicitar
+
+			.modal.modal--register.modal--register--nextstep
+				.modal__back
+				.modal__front
+					.modal__box
+						.modal__content
+							.modal__close
+								span.fa.fa-close 	
+							h3.modal__title Importante!
+							ul.modal__list 
+								li No debes guardar alimentos ni mascotas.
+								li Tus compras serán guardadas en bolsas de 70x90cm, los objetos no pueden sobrepasar esta medida.
+	
+							.modal__button 
+								button.btn Todo Ok, continuar!
+
+			.modal.modal--register.modal--register--done.modal--in
+				.modal__back
+				.modal__front
+					.modal__box
+						.modal__content
+							.modal__close
+								span.fa.fa-close 	
+							.modal__image 
+								img(src="img/icons/done.png")
+							h3.modal__title Genial!
+							p.modal__description Un anfitrión se pondrá en contacto contigo para verificar tus datos… 
+								strong atento a tu teléfono!
+							.modal__codebox
+								p.modal__name	Código de referencia:
+								p.modal__coda  ZTGHJIRGSGHHJ
+		include ../includes/footer

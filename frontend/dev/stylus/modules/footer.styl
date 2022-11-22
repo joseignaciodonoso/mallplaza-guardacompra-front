@@ -1,0 +1,38 @@
+footer 
+    background-color: #3F3F3F
+    z-index 3
+    .footer__wrap
+        width: 100%
+        height: 100%
+        .footer__logos
+            padding 20px 0px
+            background-color: #3F3F3F
+            text-align: center;
+            img 
+                display: inline-block;
+                vertical-align: middle;
+
+        .footer__icons
+            color white
+            font-size: 14px
+            display: flex
+            margin: 10px 20px 0px
+            justify-content: center
+            border-top: 1px solid rgba(84, 84, 84, 1)
+            padding: 20px 0px 20px 0px
+            @media $break-md
+                    flex-direction: row
+                    min-width none 900px
+                    padding: 20px  0px
+                    margin: 10px 120px 0px
+            ul 
+                display flex
+                gap 30px
+                align-items: center
+                flex-direction: column
+                @media $break-md
+                    flex-direction: row
+                    min-width none 900px
+            .btn
+                background-color: #545454
+                color white

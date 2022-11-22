@@ -1,0 +1,57 @@
+extends ../templates/default.jade
+block page
+
+	section.section--main
+		.section__bg        
+			.bg 
+				img(src="img/uploads/FONDO-ARBOL.png")
+		.section__wrap
+			.cols 
+				.col-md-6
+					.section__body 
+						.section__logo
+							img(src="./img/icons/Vector.png") 
+						p.section__description 
+							|	Ahora disfruta más en Mallplaza. 
+							br
+							|	Regístrate y activa tu Guarda compra
+						.section__buttons 
+							a.btn.btn--red(href="") Solicitar Guarda compra
+							a.btn.btn--white(href="") Pedir mis bolsas
+				.col-md-6
+					.section__image 
+						img(src="./img/uploads/grupo-fotos.png")
+	section.section--cards
+		.section__wrap
+			.section__header 
+				h3.section__title ¿Cómo funciona?
+
+			.section__body
+				.cols 
+					.col-md-3.col-xs-6
+						article.article__card 
+							.article__icon 
+								img(src="./img/icons/Frame 10609.svg")
+							p.article__description Indícanos donde te encuentras
+					.col-md-3.col-xs-6 
+						article.article__card 
+							.article__icon 
+								img(src="./img/icons/Frame 10610.svg")
+							p.article__description Indícanos donde te encuentras
+					.col-md-3.col-xs-6 
+						article.article__card 
+							.article__icon 
+								img(src="./img/icons/Frame 10611.svg")
+							p.article__description Indícanos donde te encuentras
+					.col-md-3.col-xs-6 
+						article.article__card 
+							.article__icon 
+								img(src="./img/icons/Frame 10612.svg")
+							p.article__description Indícanos donde te encuentras
+			.section__footer 
+				p.section__disclaimer Para solicitar el retiro de tus compras debes hacerlo con 10 minutos de anticipación en la opción “Solicitar mis bolsas”
+	
+	section.section--curve 
+		.section__wrap
+			.section__image 
+				img(src="./img/uploads/lineagris.svg")
