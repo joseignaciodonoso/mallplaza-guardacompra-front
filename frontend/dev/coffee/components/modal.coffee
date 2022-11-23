@@ -1,19 +1,10 @@
 
 app.modal =
 	init: ->
-		$("[data-modal-login]").click (e) ->
+		$("[data-modal-register]").click (e) ->
 			e.preventDefault()
-			app.modal.open(".modal--login")
+			app.modal.open(".modal--register")
 
-		$("[data-modal-docs]").click (e) ->
-			console.log "open modal docs"
-			e.preventDefault()
-			app.modal.open(".modal--docs")
-
-		$("[data-modal-plan]").click (e) ->
-			console.log "open modal docs"
-			e.preventDefault()
-			app.modal.open(".modal--plan")
 
 
 		$(".modal__close").click ->

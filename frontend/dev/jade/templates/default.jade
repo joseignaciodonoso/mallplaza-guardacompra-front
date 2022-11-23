@@ -77,34 +77,38 @@ html(lang='es')
 									.form__checkbox
 										label
 											input(type="checkbox" name="#ejemplo-checkbox" )
-											|   Acepto los 
-											u Términos y Condiciones
+											|   Acepto los
+											u 
+												a(href="#") Términos y Condiciones
 										label
 											input(type="checkbox" name="#ejemplo-checkbox" value="2")
 											|   Acepto el 
-											u reglamento
+											u
+												a(href="#") reglamento
 											| y la 
-											u política de privacidad
-											| para acceder al programa de CMR Puntos.
+											u
+												a(href="#") política de privacidad
+											|  para acceder al programa de CMR Puntos.
 									.form__button 
 										button.btn Solicitar
 
-			.modal.modal--register.modal--register--nextstep
+			.modal.modal--warning
 				.modal__back
 				.modal__front
 					.modal__box
 						.modal__content
 							.modal__close
 								span.fa.fa-close 	
-							h3.modal__title Importante!
+							h3.modal__title ¡Importante!
 							ul.modal__list 
 								li No debes guardar alimentos ni mascotas.
 								li Tus compras serán guardadas en bolsas de 70x90cm, los objetos no pueden sobrepasar esta medida.
 	
 							.modal__button 
-								button.btn Todo Ok, continuar!
+								button.btn ¡Todo Ok, continuar!  
 
-			.modal.modal--register.modal--register--done.modal--in
+
+			.modal.modal--finished
 				.modal__back
 				.modal__front
 					.modal__box

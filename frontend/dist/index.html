@@ -6,8 +6,8 @@
     <link href="img/favicon.png" rel="shortcut icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=66113" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=66113" type="text/javascript"></script>
+    <link href="css/main.css?v=38176" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=38176" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -39,7 +39,10 @@
                    
                   	Ahora disfruta más en Mallplaza. <br>	Regístrate y activa tu Guarda compra
                 </p>
-                <div class="section__buttons"> <a href="" class="btn btn--red">Solicitar Guarda compra</a><a href="" class="btn btn--white">Pedir mis bolsas</a></div>
+                <div class="section__buttons">
+                  <button data-modal-register class="btn btn--red">Solicitar Guarda compra</button>
+                  <button href="" class="btn btn--white">Pedir mis bolsas</button>
+                </div>
               </div>
             </div>
             <div class="col-md-6">
@@ -152,13 +155,13 @@
                   </div>
                   <div class="form__checkbox">
                     <label>
-                      <input type="checkbox" name="#ejemplo-checkbox">  Acepto los 
-                      <u>Términos y Condiciones</u>
+                      <input type="checkbox" name="#ejemplo-checkbox">  Acepto los
+                      <u> <a href="#">Términos y Condiciones</a></u>
                     </label>
                     <label>
                       <input type="checkbox" name="#ejemplo-checkbox" value="2">  Acepto el 
-                      <u>reglamento</u>y la 
-                      <u>política de privacidad</u>para acceder al programa de CMR Puntos.
+                      <u><a href="#">reglamento</a></u>y la 
+                      <u><a href="#">política de privacidad</a></u> para acceder al programa de CMR Puntos.
                     </label>
                   </div>
                   <div class="form__button"> 
@@ -170,25 +173,25 @@
           </div>
         </div>
       </div>
-      <div class="modal modal--register modal--register--nextstep">
+      <div class="modal modal--warning">
         <div class="modal__back"></div>
         <div class="modal__front">
           <div class="modal__box">
             <div class="modal__content">
               <div class="modal__close"><span class="fa fa-close">	</span></div>
-              <h3 class="modal__title">Importante!</h3>
+              <h3 class="modal__title">¡Importante!</h3>
               <ul class="modal__list"> 
                 <li>No debes guardar alimentos ni mascotas.</li>
                 <li>Tus compras serán guardadas en bolsas de 70x90cm, los objetos no pueden sobrepasar esta medida.</li>
               </ul>
               <div class="modal__button"> 
-                <button class="btn">Todo Ok, continuar!</button>
+                <button class="btn">¡Todo Ok, continuar!  </button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="modal modal--register modal--register--done modal--in">
+      <div class="modal modal--finished">
         <div class="modal__back"></div>
         <div class="modal__front">
           <div class="modal__box">

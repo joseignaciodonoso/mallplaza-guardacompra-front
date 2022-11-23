@@ -15,7 +15,7 @@
 		animation fadeOut .2s ease both
 		.modal__box
 			animation scaleFadeOut .2s ease both
-	&.modal--register
+	&.modal--register, &.modal--warning, &.modal--finished
 		.modal__content
 			position: absolute
 			top 50%
@@ -83,11 +83,18 @@
 						label 
 							text-align: left
 							font-size: 14px
-						
-			.btn
-				background-color: #E9004B
-				padding: 15px 20px
-	&.modal--register--nextstep
+							a 
+								color #E9004B
+								font-weight: 100
+					.form__button 
+						border-top: 1px solid gray
+						padding: 15px 60px
+						.btn
+							background-color: #E9004B
+
+
+			
+	&.modal--warning
 		.modal__content
 			position: absolute
 			top 50%
@@ -107,7 +114,7 @@
 				list-style-type circle
 				margin-bottom: 15px
 				text-align: left
-	&.modal--register--done
+	&.modal--finished
 		.modal__description
 			text-align: center
 		.modal__codebox
