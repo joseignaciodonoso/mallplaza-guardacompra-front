@@ -309,13 +309,34 @@ section
 						min-width: 500px
 					img
 						z-index 3
-
-
+		.section__how
+			position: absolute
+			bottom 0
+			background-color: white
+			z-index 5
+			display: flex
+			justify-content: center
+			align-items: flex-end
+			border-radius: 16px 16px 0px 0px
+			border-bottom: 0px	
+			.section__description
+				margin: 0px
+				padding: 0px 28px
+				font-weight: 600
+				font-size: 18px
+				@media $break-md
+					margin: 2px 0px -4px 
+			img.img__der
+				position absolute
+				right -12px
+			img.img__izq
+				position absolute
+				left -12px
 
 	&.section--cards
 		margin-top: 20px
 		.section__wrap
-			padding 0px 20px
+			padding 25px 20px
 			display: flex
 			justify-content: center
 			margin 0px auto
