@@ -43,7 +43,7 @@ html(lang='es')
 								| Bienvenido a tu 
 								strong  Guarda compra
 							.modal__form
-								form.form
+								form.form.form--validation
 									h5.form__title ¿Dónde te podemos encontrar?
 									.form__element
 										.form__input
@@ -63,7 +63,7 @@ html(lang='es')
 											input(type="text" placeholder="Nombre")
 									.form__element
 										.form__input
-											input(type="text" placeholder="Rut")
+											input.input-rut(type="rut" placeholder="Rut sin puntos ni guión")
 									.form__element
 										.form__input
 											.cols

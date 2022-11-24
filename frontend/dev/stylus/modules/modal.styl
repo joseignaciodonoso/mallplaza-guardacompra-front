@@ -74,6 +74,20 @@
 							border: 1px solid gray
 							border-radius: 8px
 							color #A7A7A7
+						&.form__element--error
+							position relative
+							&:after
+								content '\f071'
+								font-family "FontAwesome"
+								position absolute
+								top 12px
+								right 5px
+								color red
+								font-size 14px
+								line-height 14px
+								display inline-block
+								background-color transparent
+
 					.form__checkbox
 						display: flex
 						flex-direction: column
@@ -91,6 +105,7 @@
 						padding: 15px 60px
 						.btn
 							background-color: #E9004B
+
 
 
 			
