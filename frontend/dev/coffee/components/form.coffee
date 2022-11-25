@@ -3,7 +3,6 @@ app.form =
 
 	init: ->
 		$(app.form.classes.container).each ->
-
 			app.form.assign $(this)
 
 	classes:
@@ -16,7 +15,6 @@ app.form =
 		# FOCUS
 		form.find(app.form.classes.inputs).on "blur", ->
 			app.form.validate( $(this).closest(app.form.classes.item))
-
 
 
 	validateGroup: (container) ->

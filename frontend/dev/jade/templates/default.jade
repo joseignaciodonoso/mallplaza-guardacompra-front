@@ -47,41 +47,41 @@ html(lang='es')
 									h5.form__title ¿Dónde te podemos encontrar?
 									.form__element
 										.form__input
-											select(name="#")
+											select(name="#" required)
 												option(value="0") Selecciona Mail
 												option(value="1") Ipsum
 												option(value="2") Dolor
 									.form__element
 										.form__input
-											select(name="#")
+											select(name="#" required)
 												option(value="#") Selecciona Tienda
 												option(value="#") Ipsum
 												option(value="#") Dolor
 									h5.form__title Tus Datos:
 									.form__element
 										.form__input
-											input(type="text" placeholder="Nombre")
+											input(type="text" placeholder="Nombre" required)
 									.form__element
 										.form__input
-											input.input-rut(type="rut" placeholder="Rut sin puntos ni guión")
+											input.input-rut(type="rut" placeholder="Rut sin puntos ni guión" required)
 									.form__element
 										.form__input
 											.cols
 												.col-md-4.col-xs-4
-													input(type="#" placeholder="+569")
+													input(type="#" placeholder="+569" required)
 												.col-md-8.col-xs-8
-													input(type="#" placeholder="Telefono")
+													input(type="#" placeholder="Telefono" required)
 									.form__element
 										.form__input
-											input(type="#" placeholder="Mail")		
+											input(type="#" placeholder="Mail" required)		
 									.form__checkbox
 										label
-											input(type="checkbox" name="#ejemplo-checkbox" )
+											input(type="checkbox" name="#ejemplo-checkbox" required)
 											|   Acepto los
 											u 
 												a(href="#") Términos y Condiciones
 										label
-											input(type="checkbox" name="#ejemplo-checkbox" value="2")
+											input(type="checkbox" name="#ejemplo-checkbox" value="2" required)
 											|   Acepto el 
 											u
 												a(href="#") reglamento
